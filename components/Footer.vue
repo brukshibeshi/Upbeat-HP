@@ -62,6 +62,15 @@
               </v-btn> </v-col>
       </v-row>
     </v-container>
+    <v-footer inset width="auto" class="py-12">
+      <v-container>
+        <v-row justify="center">
+          <v-col lg="2" md="3" cols="12" align-self="center">
+          Upbeat@ all rights reserved 2022
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-footer>
   </v-app>
 </template>
 <script>
