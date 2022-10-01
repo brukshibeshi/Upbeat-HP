@@ -1,8 +1,8 @@
 <template>
   <div class="w-home">
-    <v-card color="#191919" flat height="700px">
+    <v-card color="#191919"  height="700px" >
       <v-app>
-        <v-container fluid fill-height>
+        <v-container  tile fluid fill-height >
           <v-row>
             <v-col cols="1">
               <v-btn
@@ -22,7 +22,7 @@
               <v-col cols="6" align="left">
                 <v-list-item max-height="50" two-line>
                   <v-list-item-content>
-                    <v-list-item-title class="fo text-wrap font-weight-medium"
+                    <v-list-item-title expand class="fo text-wrap font-weight-medium"
                       >Upbeat Wireless Headphones E60BT
                     </v-list-item-title>
                     <v-list-item-title class="pr">$219.78</v-list-item-title>
@@ -37,7 +37,7 @@
               <v-img class="w-img" :src="im"></v-img>
             </v-col>
             <v-col cols="1"
-              ><v-timeline class="w-timeli" fill-dot>
+              ><v-timeline class="w-timeli"  >
                 <v-timeline-item v-for="n in 3" :key="n" large>
                   <template v-slot:icon>
                     <div>{{ n }}</div>
@@ -165,6 +165,9 @@ export default {
 };
 </script>
 <style>
+.w-home{
+
+}
 .w-prod {
   margin-top: 6%;
   border-style: none;
@@ -181,13 +184,15 @@ export default {
 }
 .bn {
   z-index: 4;
+  margin-top: 20px;
   position: absolute;
+  left: 20px;
 }
 .text {
-  top: 30%;
-  width: 80%;
+  top: 12rem;
+  width: 80rem;
   position: absolute;
-  right: 10%;
+  left: 10rem;
 }
 .ic {
   font-family: 'Montserrat';
@@ -208,12 +213,13 @@ export default {
 }
 .fo {
   font-size: 60px;
-  font-family:'Montserrat';
-  line-height: 80px;
+  font-family:'roboto', sans-serif;
   top: 90px;
   z-index: 2;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  word-spacing: 30px;
+  line-height: 50px;
 }
 .w-logo {
   right: 6%;
@@ -223,6 +229,7 @@ export default {
   font-size: 25px;
   font-family: "Gotahm";
   z-index: 2;
+  margin-top: 25px;
 }
 
 .ti {
@@ -232,7 +239,7 @@ export default {
 .bt {
   z-index: 2;
   top: 9.5rem;
-  left: 10px;
+  left: 2px;
 }
 
 .txt {
@@ -243,5 +250,6 @@ export default {
   background-position: center;
   bottom: 30%;
   width: 95px;
+
 }
 </style>

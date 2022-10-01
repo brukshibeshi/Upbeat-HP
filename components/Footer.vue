@@ -5,11 +5,11 @@
         <v-col  cols="5">
           <v-img class="logo" :src="foot" height="45" contain width="auto"></v-img>
           <p>Subscribe to our newsletter</p>
-          <v-row>
+          <v-row> 
             <v-text-field label="Enter your email" filled rounded dense>
             </v-text-field>
-            <v-btn class="subscribe" x-large rounded color="primary">subscribe</v-btn>
-          </v-row>
+            <v-btn x-large rounded color="primary">subscribe</v-btn>
+        </v-row>
         </v-col>
         <v-col cols="6">
           <v-container class="lis">
@@ -62,6 +62,9 @@
               </v-btn> </v-col>
       </v-row>
     </v-container>
+    <v-footer>
+    up
+    </v-footer>
   </v-app>
 </template>
 <script>
@@ -115,7 +118,7 @@ export default {
  top: 95px;
 }
 .logo{
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     top: 2rem;
     right: 11rem;
 }
@@ -125,6 +128,7 @@ export default {
 }
 .lis {
   margin-top: 15%;
+  right: 90rem;
 }
 .w-footer {
   height: 500px;
@@ -135,14 +139,18 @@ export default {
 }
 p {
   color: #464646;
-  margin-top: 5%;
+  font-family: 'roboto', sans-serif;
   margin-bottom: 10%;
   font-weight: 500;
+  margin-left: 2.5rem;
 }
+
 .v-text-field{
-   width: 80px;
+      width: 340px !important;
+      margin-left: 2.5rem;
+      margin-right: 4rem;
 }
-.subscribe{
-right: 11rem;
+.v-btn{
+   margin-right: 2rem;
 }
 </style>

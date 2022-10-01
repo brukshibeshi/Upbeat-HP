@@ -19,6 +19,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Gotham' },
     ]
   },
 
@@ -43,6 +44,7 @@ export default {
   families: {
     Montserrat: [300, 500, 700],
     Roboto: [300, 500, 700],
+    Gotham: [300, 500, 700],
     }
 },
 
