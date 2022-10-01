@@ -62,9 +62,6 @@
               </v-btn> </v-col>
       </v-row>
     </v-container>
-    <v-footer>
-    up
-    </v-footer>
   </v-app>
 </template>
 <script>
@@ -151,6 +148,6 @@ p {
       margin-right: 4rem;
 }
 .v-btn{
-   margin-right: 2rem;
+   right: 2rem;
 }
 </style>
