@@ -32,8 +32,8 @@
 </script>
 <style scoped>
  .te{
-  font-family: 'Montserrat';
-  font-size: 16px;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 15px;
   font-weight: 700;
  }
 </style>

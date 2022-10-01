@@ -31,7 +31,7 @@ export default {
   margin-bottom: 50px;
 }
 .today {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 40px;
   left: 50%;
