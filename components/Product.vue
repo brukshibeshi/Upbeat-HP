@@ -33,7 +33,7 @@
 <style scoped>
  .te{
   font-family: 'Montserrat' sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
  }
 </style>

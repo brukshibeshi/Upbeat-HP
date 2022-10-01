@@ -37,8 +37,8 @@ font-weight: 400;
   margin-bottom: 50px;
 }
 .in{
-  font-family: 'Roboto' sans-serif;
-  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #000;
   margin-bottom: 50px;
