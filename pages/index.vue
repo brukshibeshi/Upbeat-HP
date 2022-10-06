@@ -1,8 +1,8 @@
 <template>
   <div class="w-home">
-    <v-card color="#191919"  height="700px" >
+    <v-card color="#191919" height="700px">
       <v-app>
-        <v-container  tile fluid fill-height >
+        <v-container tile fluid fill-height>
           <v-row>
             <v-col cols="1">
               <v-btn
@@ -37,7 +37,7 @@
               <v-img class="w-img" :src="im"></v-img>
             </v-col>
             <v-col cols="1"
-              ><v-timeline class="w-timeli"  >
+              ><v-timeline class="w-timeli">
                 <v-timeline-item v-for="n in 3" :key="n" large>
                   <template v-slot:icon>
                     <div>{{ n }}</div>
@@ -68,7 +68,7 @@
           sm="6"
           md="4"
           lg="3"
-          v-for="(product, idx) in product"
+          v-for="(product, idx) in products"
           :key="idx"
         >
           <Product :product="product"></Product>
@@ -79,7 +79,20 @@
     <v-container fill-height fluid>
       <v-row>
         <v-col cols="12">
-          <v-img :src="pic"> </v-img>
+          <v-img :src="pic">
+            <v-container>
+              <v-row>
+                
+                  <h1 class="image-text" align-center>Be ready fo feel next level sound</h1>
+                  <p text-sub>Check out our latest Accessories</p>
+               
+                  <div class="shop-button">
+                    <v-btn class="shop-button" rounded color="#EF233C" text-color="#F5F5F5"> Shop</v-btn>
+                  </div>
+                
+              </v-row>
+            </v-container>
+          </v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -114,36 +127,42 @@ export default {
     im: require("@/assets/imgs/headphone.png"),
     pic: require("@/assets/imgs/pic.png"),
     picture: require("@/assets/imgs/pic2.PNG"),
-    product: [
+    products: [
       {
         img: require("@/assets/imgs/hp1.PNG"),
         text: "Wireless Headphones 720",
-        subtext: "$106.58",
+        price: 106.58,
+        discount: 0,
       },
       {
         img: require("@/assets/imgs/hp2.PNG"),
         text: "Wireless Headphones E45BT",
-        subtext: "$169.43",
+        price: 169.43,
+        discount: 0,
       },
       {
         img: require("@/assets/imgs/hp3.PNG"),
         text: "Wireless Headphones E60BT",
-        subtext: "$219.78",
+        price: 219.78,
+        discount: 0,
       },
       {
         img: require("@/assets/imgs/hp4.PNG"),
         text: "Wireless Headphones E900",
-        subtext: "$95.08 $85.58",
+        price: 95.08,
+        discount: 85.58,
       },
       {
         img: require("@/assets/imgs/hp5.PNG"),
         text: "Bluetooth Wireless Hearband",
-        subtext: "$106.58 $52.39",
+        price: 106.58,
+        discount: 52.39,
       },
       {
         img: require("@/assets/imgs/hp6.PNG"),
         text: "Wireless Headphones 720",
-        subtext: "$106.58 $20.54",
+        price: 106.58,
+        discount: 20.54,
       },
     ],
 
@@ -165,8 +184,18 @@ export default {
 };
 </script>
 <style>
-.w-home{
+.shop-button {
+  color: #ef233c;
+}
+.text-sub{
+  text-decoration-color: #f5f5f5;
+}
+.image-text {
 
+margin-left: 10rem;
+  color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  word-wrap: break-word;
 }
 .w-prod {
   margin-top: 6%;
@@ -175,7 +204,7 @@ export default {
 }
 .txtpr {
   font-size: 3rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 .text-center {
   position: absolute;
@@ -186,7 +215,7 @@ export default {
   z-index: 4;
   margin-top: 20px;
   position: absolute;
-  left: 20px;
+  left: 32px;
 }
 .text {
   top: 12rem;
@@ -195,7 +224,7 @@ export default {
   left: 10rem;
 }
 .ic {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 15px;
 }
 .w-timeli {
@@ -213,7 +242,7 @@ export default {
 }
 .fo {
   font-size: 60px;
-  font-family:'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   top: 90px;
   z-index: 2;
   font-weight: 700;
@@ -250,6 +279,5 @@ export default {
   background-position: center;
   bottom: 30%;
   width: 95px;
-
 }
 </style>
