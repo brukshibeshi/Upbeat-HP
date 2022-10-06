@@ -82,12 +82,13 @@
           <v-img :src="pic">
             <v-container>
               <v-row>
-                
+                <v-col cols="6"></v-col>
                   <h1 class="image-text" align-center>Be ready fo feel next level sound</h1>
-                  <p text-sub>Check out our latest Accessories</p>
-               
+                  <p class="text-sub">Check out our latest Accessories</p>
+                  
+               <v-col cols="6"></v-col>
                   <div class="shop-button">
-                    <v-btn class="shop-button" rounded color="#EF233C" text-color="#F5F5F5"> Shop</v-btn>
+                    <v-btn class="shop-button" rounded color="#EF233C"> Shop now</v-btn>
                   </div>
                 
               </v-row>
@@ -186,16 +187,22 @@ export default {
 <style>
 .shop-button {
   color: #ef233c;
+  bottom: 55px;
+  width: 100px;
 }
 .text-sub{
-  text-decoration-color: #f5f5f5;
+  color: #dfdbdb;
+  font-family: "Montserrat", sans-serif;
 }
 .image-text {
-
-margin-left: 10rem;
+  right: 50px;
+margin-top: 80px;
+margin-right: 55rem;
+width: 500px !important;
   color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
+ margin-bottom: 30px;
 }
 .w-prod {
   margin-top: 6%;
