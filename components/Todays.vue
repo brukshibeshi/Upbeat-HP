@@ -28,7 +28,7 @@ export default {
   height: 5rem;
   margin-top: 5rem;
   left: 30%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .today {
   font-family: 'Montserrat', sans-serif;
